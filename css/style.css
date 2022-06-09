@@ -2,6 +2,27 @@
 
 /*Body is selector, curly brackets are block, color is property, blueviolet or hex code color is value*/
 
+
+/*Tiers of cascading styles: 
+1. transition
+2. !important
+3. animation
+4. normal
+
+-Origin-
+website
+user
+browser
+
+-Specificity-
+inline > id > class > type
+
+-position- 
+where on style sheet - top to bottom
+
+*/
+
+
 body {
 	background-color: #e6e6e6;
 	color: #333333;
@@ -23,6 +44,7 @@ h1, h2, h3, h4 {  /*Group Selector*/
 	margin: 0; 
 }               /*Spacing*/
 
-p:last-child {        /*Last paragraph*/
-	color: blue;
-}
+ p {
+        color: purple !important;   /*Override*/
+      }
+
