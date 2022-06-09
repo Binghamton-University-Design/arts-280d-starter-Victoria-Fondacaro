@@ -1,6 +1,28 @@
 /*stylesheet*/
 
+/*Body is selector, curly brackets are block, color is property, blueviolet or hex code color is value*/
+
 body {
-	background-color: blueviolet;
+	background-color: #e6e6e6;
 	color: #333333;
+}
+
+h1#main-headline {    /*Specific ID*/
+	font-size: 48px;
+	color: green;
+	font-weight: 800; /*800 is Bold Equivalent*/
+}
+
+h1.main-headline {    /*Class*/
+	font-size: 48px;
+	color: red;
+	font-weight: 800; 
+}
+
+h1, h2, h3, h4 {  /*Group Selector*/
+	margin: 0; 
+}               /*Spacing*/
+
+p:last-child {        /*Last paragraph*/
+	color: blue;
 }

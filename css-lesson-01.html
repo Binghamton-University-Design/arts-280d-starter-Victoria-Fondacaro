@@ -3,20 +3,32 @@
 <html>
 
   <head>
-    <title>HTML Lesson</title>
+    <title>CSS Lesson 01</title>
     <meta name="keywords" content="lesson, HTML, Binghamton University">
     <meta name="description" content="This is a basic intro to HTML coding.">
     <link rel="stylesheet" type="text/css" href="css/style.css">
+    /*External styling CSS*/
+
+    <style type="text/css">   /*Internal styling CSS*/
+      
+      p:first-child {
+        color: purple;
+      }
+    </style>
+
+
+
   </head>
 
   <body>
 
-    <h1>Intro to HTML Lesson</h1>
+    <h1 id="main-headline">Intro to HTML Lesson</h1>
+    <h1 class="main-headline">Another Headline</h1>
     <h2>My very nice subtitle</h2>
-    <h3>Another headline right here</h3>
+    <h3 style="font-size: 64px;">Another headline right here</h3>
     <h4>This is an even smaller header</h4>
 
-    <!-- This is a comment -->
+    <!-- Do not do inline styling unless very good reason (h3) -->
 
     <div>
      <p>
