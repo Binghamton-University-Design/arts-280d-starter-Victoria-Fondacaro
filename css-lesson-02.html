@@ -3,23 +3,41 @@
 <html>
 
   <head>
-    <title>HTML Lesson</title>
+    <title>CSS Lesson 01</title>
     <meta name="keywords" content="lesson, HTML, Binghamton University">
     <meta name="description" content="This is a basic intro to HTML coding.">
-    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/css-lesson-02.css">
+    <!-- External styling CSS-->
+
+<!-- Internal styling CSS -->
+    <style type="text/css">   
+      
+      p {
+        color: orange;                    
+
+      }
+    </style> <!-- Inside honored second -->
+
+  <!-- CSS file honored third -->
+
+
   </head>
 
   <body>
 
-    <h1>Intro to HTML Lesson</h1>
+    <h1 id="main-headline">Intro to HTML Lesson</h1>
+    <h1 class="main-headline">Another Headline</h1>
     <h2>My very nice subtitle</h2>
-    <h3>Another headline right here</h3>
+    <h3 style="font-size: 64px;">Another headline right here</h3>
     <h4>This is an even smaller header</h4>
 
-    <!-- This is a comment -->
+    <!-- Do not do inline styling unless very good reason (h3) -->
 
+
+
+<!-- Inline honored first -->
     <div>
-     <p>
+     <p style="color: pink;"> 
       Nunc porttitor odio non commodo luctus. Mauris placerat erat id varius, <em>New York Times</em> tincidunt. Quisque eu orci elit. Mauris tellus mi, finibus quis tortor sed, interdum consequat ligula. Sed accumsan porta ligula sit amet consectetur. Integer tincidunt metus risus, sit amet luctus massa consequat nec. In pulvinar nulla ut imperdiet iaculis. Aliquam erat volutpat. In est sem, viverra eu <strong>libero ullamcorper</strong>, luctus blandit justo. Mauris sit amet urna placerat, consectetur justo nec, lacinia turpis. Pellentesque fringilla ligula ut urna luctus, non rhoncus est venenatis. Ut quis suscipit metus.
       
     </p>
