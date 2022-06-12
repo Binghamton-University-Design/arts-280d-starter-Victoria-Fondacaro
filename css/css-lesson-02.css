@@ -1,50 +1,66 @@
 /*stylesheet*/
 
-/*Body is selector, curly brackets are block, color is property, blueviolet or hex code color is value*/
-
-
-/*Tiers of cascading styles: 
-1. transition
-2. !important
-3. animation
-4. normal
-
--Origin-
-website
-user
-browser
-
--Specificity-
-inline > id > class > type
-
--position- 
-where on style sheet - top to bottom
-
-*/
-
-
 body {
-	background-color: #e6e6e6;
-	color: #333333;
+	color: #000;
+	font-size: 16px;
+	font-family: 'Noto Sans JP', sans-serif;
+	background-color: #625F5D;
+	background: url('../images/crushed.jpg');  /*3 lines for bkg image*/
+	background-size: cover;
+	background-repeat: no-repeat;
+
 }
 
-h1#main-headline {    /*Specific ID*/
+#wrapper {
+	margin: 2em auto;  
+	max-width: 960px;   /*Do not be wider than 960*/
+	padding: 0 20px;
+
+}
+
+.article {
+	padding: 60px 0 20px 0;
+	background-color: #fff;
+
+}
+
+
+img{
+	display: block;
+	width: 100%;
+	height: auto;
+	margin: 60px 0;
+}
+
+h1, p {
+	margin-left: 20px;
+	margin-right: 20px;
+}
+
+p {
+	line-height: 1.5;
+}
+
+p.byline {
+	color: #000;
+	font-size: 14px ;
+}
+
+p.quote {
+	text-align: center;
+}
+
+h1 {
+	font-family: 'Lato', sans-serif;
+	font-weight: 900;
+	margin-top: 0;
 	font-size: 48px;
-	color: green;
-	font-weight: 800; /*800 is Bold Equivalent*/
 }
 
-h1.main-headline {    /*Class*/
-	font-size: 48px;
-	color: red;
-	font-weight: 800; 
+.article a {
+	color: #31ac55;	
 }
 
-h1, h2, h3, h4 {  /*Group Selector*/
-	margin: 0; 
-}               /*Spacing*/
-
- p {
-        color: purple !important;   /*Override*/
-      }
-
+.article a:hover {
+	text-decoration: none;
+}
