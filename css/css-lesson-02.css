@@ -9,6 +9,7 @@ body {
 	background-size: cover;
 	background-repeat: no-repeat;
 
+
 }
 
 #wrapper {
@@ -16,11 +17,13 @@ body {
 	max-width: 960px;   /*Do not be wider than 960*/
 	padding: 0 20px;
 
+
 }
 
 .article {
 	padding: 60px 0 20px 0;
-	background-color: #fff;
+	background: rgba(255, 255, 255, .9)
+	
 
 }
 
@@ -42,12 +45,13 @@ p {
 }
 
 p.byline {
-	color: #000;
 	font-size: 14px ;
+	font-weight: bold;
 }
 
 p.quote {
 	text-align: center;
+	color: green !important;   /*Override*/
 }
 
 h1 {
