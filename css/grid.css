@@ -1,0 +1,21 @@
+/*GRID*/
+
+.grid {
+	display: grid;
+	grid-template-columns: repeat(12, 1fr);
+	position: relative;
+	grid-gap: 2rem;
+
+}
+
+/*GRID*/
+
+
+
+
+
+
+/*MOBILE*/
+
+
+/*DESKTOP / LATPTOP*/
