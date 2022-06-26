@@ -1,6 +1,14 @@
+/* vars */
+
+:root {
+  --background-color: #fff;
+  --body-color: #111;
+}
+
+
 body {
-	background-color: #ffffff;
-	color: #333333;
+	background-color: var(--background-color);
+	color: var(--body-color);;
 	font-family: 'Roboto Mono' monospace;
 }
 
@@ -45,7 +53,7 @@ h4 {
 }
 
 #logo a {
-  color: #000;
+  color: var(--body-color);
   text-decoration: none;
   display: flex;
   width: 100%;
@@ -69,7 +77,7 @@ h4 {
 
 
 #nav a { 
-color: #000;
+color: var(--body-color);
 font-weight: 300; 
 letter-spacing: 2px; 
 text-decoration-color: transparent; 
@@ -80,7 +88,7 @@ transition: text-decoration-color .3s ease-in-out;
 }
 
 #nav a:hover { 
-  text-decoration-color: #000;
+  text-decoration-color: var(--body-color);;
 }
 
 #nav.active {
@@ -190,8 +198,15 @@ transition: text-decoration-color .3s ease-in-out;
   height: 70vh;
 }
 
-#work h3 {
+#work h3, #writing h3, #portfolio h3 {
+  letter-spacing: 1px;
   margin-bottom: 2rem;
+
+}
+
+#work h3 a, #writing h3 a, #portfolio h3 a {
+  color:  var(--body-color);
+  text-decoration: none;
 
 }
 
@@ -201,7 +216,7 @@ transition: text-decoration-color .3s ease-in-out;
   position: relative;
   width: 100%; 
   padding-top: calc((1 / 1) * 100%);
-  background-color: #000;
+  background-color: var(--body-color);;
 }
 
 .work-item .inner {
@@ -240,6 +255,75 @@ transition: text-decoration-color .3s ease-in-out;
   height: 100%;
 }
 
+.writing-item .date-holder {
+  margin-bottom: .25em;
+}
+
+.writing-item img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.writing-item .caption {
+  font-size: .75rem;
+  color: #666666;
+  display: block;
+  width: 100%;
+  margin-top: .5rem;
+  margin-bottom: 2rem;
+  text-align: right;
+}
+
+.writing-item .date {
+  margin: 0;
+  font-size: .85rem;
+  padding: 0 4px;
+  color: var(--background-color);
+  display: inline-block;
+  background-color: var(--body-color);
+}
+
+.writing-item h2 a {
+  color: var(--body-color);
+  text-decoration-color: transparent; 
+  transition: text-decoration-color .3s ease-in-out;
+}
+
+.writing-item h2 a:hover {
+  color: var(--body-color);
+  text-decoration-color: var(--body-color); 
+}
+
+.writing-item p a {
+  color: var(--body-color);
+  text-decoration-color: var(--body-color); 
+}
+
+/*PORTFOLIO + WRITING*/
+
+#portfolio, #writings {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
+#portfolio .work-item {
+  padding-top: calc((9 / 16) * 100%);
+}
+
+#portfolio .work-item .inner .work-inside {
+  opacity: 1;
+}
+
+#portfolio p a {
+  color: var(--body-color);
+  text-decoration-color: var(--body-color); 
+  transition: text-decoration-color .3s ease-in-out;
+}
+
+#portfolio p a:hover {
+  text-decoration-color: transparent; 
+}
 
 
 /*FOOTER*/
